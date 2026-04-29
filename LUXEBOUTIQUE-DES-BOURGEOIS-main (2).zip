@@ -1,0 +1,124 @@
+<!-- SECTION GADGETS AVEC SOUS-CATÉGORIES + LIENS AFFILIÉS -->
+<section id="gadgets" style="background: #ffffff; padding: 60px 0;">
+  <div class="container">
+    <h2 class="section-title">📱 Gadgets & High-Tech chic</h2>
+    <p class="section-sub">Pour un quotidien connecté, élégant et performant – sélection Amazon</p>
+
+    <!-- Catégorie 1 : Écrans portables & PC -->
+    <div class="gadget-category">
+      <h3>🖥️ Écrans portables & Ordinateurs</h3>
+      <div class="product-grid">
+        <!-- SMISEACOW Triple écran -->
+        <div class="product-card">
+          <img class="product-img" src="https://m.media-amazon.com/images/I/61q6kqJqQlL._AC_SL1500_.jpg" alt="SMISEACOW Écran portable triple" onerror="this.src='https://placehold.co/400x500/e6dfd5/2c2c2c?text=SMISEACOW'">
+          <div class="product-info">
+            <div class="product-brand">AMAZON</div>
+            <div class="product-title">SMISEACOW Écran Portable Triple 14" FHD 1080P, Rotation 360°</div>
+            <div class="product-price">165,00 € <span style="font-size:0.8rem; text-decoration:line-through;">173,99€</span></div>
+            <a href="https://www.amazon.fr/dp/B0CQ5XYZ12?tag=votreprojet-21" class="affiliate-link" target="_blank">Voir sur Amazon →</a>
+          </div>
+        </div>
+        <!-- HP EliteBook 845 G8 (255€) -->
+        <div class="product-card">
+          <img class="product-img" src="https://m.media-amazon.com/images/I/51Vvq0S3zDL._AC_SL1500_.jpg" alt="HP EliteBook 845 G8" onerror="this.src='https://placehold.co/400x500/e6dfd5/2c2c2c?text=HP+EliteBook'">
+          <div class="product-info">
+            <div class="product-brand">AMAZON RENOUVÉ</div>
+            <div class="product-title">HP EliteBook 845 G8 14" FHD, Ryzen 5 Pro, 8 Go RAM, 256 Go SSD, Win11 Pro</div>
+            <div class="product-price">255,00 €</div>
+            <a href="https://www.amazon.fr/dp/B09G8K7L4M?tag=votreprojet-21" class="affiliate-link" target="_blank">Voir sur Amazon →</a>
+          </div>
+        </div>
+        <!-- PC Portable 15.6" Core M3 -->
+        <div class="product-card">
+          <img class="product-img" src="https://m.media-amazon.com/images/I/71aE5pZqzEL._AC_SL1500_.jpg" alt="PC Portable 15.6 pouces" onerror="this.src='https://placehold.co/400x500/e6dfd5/2c2c2c?text=PC+Portable'">
+          <div class="product-info">
+            <div class="product-brand">AMAZON</div>
+            <div class="product-title">Ordinateur Portable 15.6" Win11, 8Go RAM 256Go SSD, Core M3, clavier rétroéclairé</div>
+            <div class="product-price">299,99 €</div>
+            <a href="https://www.amazon.fr/dp/B08N5C6T7R?tag=votreprojet-21" class="affiliate-link" target="_blank">Voir sur Amazon →</a>
+          </div>
+        </div>
+        <!-- domyfan Extension écran triple -->
+        <div class="product-card">
+          <img class="product-img" src="https://m.media-amazon.com/images/I/61PzJtqN+RL._AC_SL1500_.jpg" alt="domyfan triple écran" onerror="this.src='https://placehold.co/400x500/e6dfd5/2c2c2c?text=domyfan'">
+          <div class="product-info">
+            <div class="product-brand">AMAZON</div>
+            <div class="product-title">domyfan 15.6" Extension d'écran Triple portable IPS FHD 1080P</div>
+            <div class="product-price">227,99 € <span style="text-decoration:line-through;">239,99€</span></div>
+            <a href="https://www.amazon.fr/dp/B0C1D2E3F4?tag=votreprojet-21" class="affiliate-link" target="_blank">Voir sur Amazon →</a>
+          </div>
+        </div>
+        <!-- HP EliteBook 845 G8 (269€) second modèle -->
+        <div class="product-card">
+          <img class="product-img" src="https://m.media-amazon.com/images/I/51Vvq0S3zDL._AC_SL1500_.jpg" alt="HP EliteBook second" onerror="this.src='https://placehold.co/400x500/e6dfd5/2c2c2c?text=HP+EliteBook+v2'">
+          <div class="product-info">
+            <div class="product-brand">AMAZON RENOUVÉ</div>
+            <div class="product-title">HP EliteBook 845 G8 14" FHD, Ryzen 5 Pro, 8Go RAM, 256Go SSD, clavier US</div>
+            <div class="product-price">269,50 €</div>
+            <a href="https://www.amazon.fr/dp/B09G8K7L4N?tag=votreprojet-21" class="affiliate-link" target="_blank">Voir sur Amazon →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Catégorie 2 : Hubs, adaptateurs & chargeurs -->
+    <div class="gadget-category">
+      <h3>🔌 Hubs, adaptateurs & chargeurs</h3>
+      <div class="product-grid">
+        <div class="product-card">
+          <img class="product-img" src="https://m.media-amazon.com/images/I/61mPQZPpBLL._AC_SL1500_.jpg" alt="UGREEN Hub USB C 4 ports" onerror="this.src='https://placehold.co/400x500/e6dfd5/2c2c2c?text=UGREEN+Hub'">
+          <div class="product-info">
+            <div class="product-brand">AMAZON</div>
+            <div class="product-title">UGREEN 10Gbps Hub USB C vers 4 USB C 3.2 Gen2, 30cm</div>
+            <div class="product-price">15,33 € <span style="text-decoration:line-through;">16,14€</span></div>
+            <a href="https://www.amazon.fr/dp/B08XYZ1234?tag=votreprojet-21" class="affiliate-link" target="_blank">Voir sur Amazon →</a>
+          </div>
+        </div>
+        <div class="product-card">
+          <img class="product-img" src="https://m.media-amazon.com/images/I/61mPQZPpBLL._AC_SL1500_.jpg" alt="UGREEN Hub aluminium" onerror="this.src='https://placehold.co/400x500/e6dfd5/2c2c2c?text=UGREEN+Alu'">
+          <div class="product-info">
+            <div class="product-brand">AMAZON</div>
+            <div class="product-title">UGREEN 10Gbps Hub USB C 4 ports, coque aluminium</div>
+            <div class="product-price">21,99 €</div>
+            <a href="https://www.amazon.fr/dp/B08XYZ1235?tag=votreprojet-21" class="affiliate-link" target="_blank">Voir sur Amazon →</a>
+          </div>
+        </div>
+        <div class="product-card">
+          <img class="product-img" src="https://m.media-amazon.com/images/I/71bR+oD2FYL._AC_SL1500_.jpg" alt="MOKiN Hub 5-en-1" onerror="this.src='https://placehold.co/400x500/e6dfd5/2c2c2c?text=MOKiN'">
+          <div class="product-info">
+            <div class="product-brand">AMAZON</div>
+            <div class="product-title">MOKiN Hub USB C 5-en-1, double sortie 4K@60Hz, PD 100W</div>
+            <div class="product-price">35,13 € <span style="text-decoration:line-through;">45,99€</span></div>
+            <a href="https://www.amazon.fr/dp/B09LMNOPQR?tag=votreprojet-21" class="affiliate-link" target="_blank">Voir sur Amazon →</a>
+          </div>
+        </div>
+        <div class="product-card">
+          <img class="product-img" src="https://m.media-amazon.com/images/I/71c3q8z-XqL._AC_SL1500_.jpg" alt="BASESAILOR adaptateur USB C" onerror="this.src='https://placehold.co/400x500/e6dfd5/2c2c2c?text=BASESAILOR'">
+          <div class="product-info">
+            <div class="product-brand">AMAZON BEST SELLER</div>
+            <div class="product-title">BASESAILOR Adaptateur USB vers USB C (lot 3)</div>
+            <div class="product-price">6,99 € <span style="font-size:0.8rem;">(2,33€/unité)</span></div>
+            <a href="https://www.amazon.fr/dp/B08ABC123D?tag=votreprojet-21" class="affiliate-link" target="_blank">Voir sur Amazon →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Catégorie 3 : Imprimantes & bureautique -->
+    <div class="gadget-category">
+      <h3>🖨️ Imprimantes & bureautique</h3>
+      <div class="product-grid">
+        <div class="product-card">
+          <img class="product-img" src="https://m.media-amazon.com/images/I/71kQzK+r1VL._AC_SL1500_.jpg" alt="Epson EcoTank ET-3950" onerror="this.src='https://placehold.co/400x500/e6dfd5/2c2c2c?text=Epson+EcoTank'">
+          <div class="product-info">
+            <div class="product-brand">AMAZON</div>
+            <div class="product-title">Epson EcoTank ET-3950, wifi, recto verso, ADF, 3 ans d'encre incluse</div>
+            <div class="product-price">406,90 €</div>
+            <a href="https://www.amazon.fr/dp/B09XYZ7890?tag=votreprojet-21" class="affiliate-link" target="_blank">Voir sur Amazon →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="affiliate-note" style="text-align:center; margin-top:30px;">* Les images sont extraites des catalogues Amazon. En tant qu'affilié, nous percevons une commission sur les achats éligibles.</p>
+  </div>
+</section>

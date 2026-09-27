@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUXEBOUTIQUE des Bourgeois — L'élégance pour toute la famille</title>
+    <meta name="description" content="Mode chic et intemporelle pour Femme, Homme et Enfant. Sélection curatoriale de pièces d'exception pour un style bourgeois authentique.">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            color: #2a2a2a;
+            background: #fdfcfa;
+            line-height: 1.7;
+        }
+
+        /* ===== HEADER ===== */
+        header {
+            background: rgba(253, 252, 250, 0.95);
+            padding: 30px 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #e8e2d8;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(10px);
+        }
+        .logo {
+            font-size: 1.3em;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            font-weight: normal;
+            color: #1a1a1a;
+        }
+        .logo span { color: #b8945f; }
+        nav a {
+            color: #2a2a2a;
+            text-decoration: none;
+            margin-left: 35px;
+            font-size: 0.85em;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            transition: color 0.3s;
+            position: relative;
+        }
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: #b8945f;
+            transition: width 0.3s;
+        }
+        nav a:hover { color: #b8945f; }
+        nav a:hover::after { width: 100%; }
+
+        /* ===== HERO ===== */
+        .hero {
+            text-align: center;
+            padding: 140px 20px 120px;
+            background: linear-gradient(135deg, #fdfcfa 0%, #f5efe6 50%, #ede4d6 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: '❦';
+            position: absolute;
+            top: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 1.5em;
+            color: #b8945f;
+            opacity: 0.6;
+        }
+        .hero h1 {
+            font-size: 3.2em;
+            letter-spacing: 6px;
+            text-transform: uppercase;
+            margin-bottom: 25px;
+            font-weight: normal;
+            color: #1a1a1a;
+        }
+        .hero .divider {
+            width: 80px;
+            height: 2px;
+            background: #b8945f;
+            margin: 0 auto 30px;
+        }
+        .hero p {
+            font-size: 1.2em;
+            color: #6b6259;
+            max-width: 700px;
+            margin: 0 auto 45px;
+            font-style: italic;
+            line-height: 1.8;
+        }
+        .btn {
+            display: inline-block;
+            padding: 18px 50px;
+            background: #1a1a1a;
+            color: #fdfcfa;
+            text-decoration: none;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            font-size: 0.85em;
+            transition: all 0.4s;
+            border: 1px solid #1a1a1a;
+        }
+        .btn:hover {
+            background: #b8945f;
+            border-color: #b8945f;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(184, 148, 95, 0.3);
+        }
+
+        /* ===== RAYONS ===== */
+        .rayons {
+            padding: 120px 60px;
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+        .section-header {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+        .section-header .ornament {
+            color: #b8945f;
+            font-size: 1.2em;
+            letter-spacing: 8px;
+            margin-bottom: 20px;
+        }
+        .section-header h2 {
+            font-size: 2em;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            font-weight: normal;
+            color: #1a1a1a;
+        }
+        .section-header .subtitle {
+            color: #6b6259;
+            font-style: italic;
+            font-size: 1.05em;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Grille à 3 colonnes pour Femme, Homme, Enfant */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+        .rayon-card {
+            background: #ffffff;
+            border: 1px solid #ede4d6;
+            padding: 60px 35px;
+            text-align: center;
+            transition: all 0.4s;
+            text-decoration: none;
+            color: #2a2a2a;
+            position: relative;
+            overflow: hidden;
+        }
+        .rayon-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, #b8945f, transparent);
+            transform: scaleX(0);
+            transition: transform 0.4s;
+        }
+        .rayon-card:hover::before { transform: scaleX(1); }
+        .rayon-card:hover {
+            border-color: #b8945f;
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(184, 148, 95, 0.15);
+        }
+        .rayon-card .icon {
+            font-size: 3.5em;
+            margin-bottom: 25px;
+            display: block;
+        }
+        .rayon-card h3 {
+            font-size: 1.4em;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            font-weight: normal;
+        }
+        .rayon-card .card-divider {
+            width: 50px;
+            height: 1px;
+            background: #b8945f;
+            margin: 0 auto 20px;
+        }
+        .rayon-card p {
+            color: #6b6259;
+            font-size: 0.95em;
+            font-style: italic;
+            line-height: 1.7;
+        }
+
+        /* ===== BANDEAU CITATION ===== */
+        .citation {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+            color: #fdfcfa;
+            padding: 100px 60px;
+            text-align: center;
+            position: relative;
+        }
+        .citation::before {
+            content: '"';
+            font-size: 8em;
+            color: #b8945f;
+            opacity: 0.2;
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-family: Georgia, serif;
+        }
+        .citation p {
+            font-size: 1.5em;
+            font-style: italic;
+            max-width: 800px;
+            margin: 0 auto 25px;
+            letter-spacing: 1px;
+            line-height: 1.6;
+            position: relative;
+        }
+        .citation .author {
+            color: #b8945f;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            font-size: 0.85em;
+        }
+
+        /* ===== LOOKBOOK ===== */
+        .lookbook {
+            padding: 120px 60px;
+            background: #f5efe6;
+        }
+        .lookbook-inner {
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+        .lookbook-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 35px;
+            margin-top: 60px;
+        }
+        .look-card {
+            background: #ffffff;
+            padding: 45px 35px;
+            border: 1px solid #ede4d6;
+            transition: all 0.4s;
+            position: relative;
+        }
+        .look-card:hover {
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+            transform: translateY(-5px);
+        }
+        .look-card .number {
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            font-size: 3em;
+            color: #f5efe6;
+            font-weight: bold;
+            line-height: 1;
+        }
+        .look-card h3 {
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            font-weight: normal;
+            color: #1a1a1a;
+            font-size: 1.1em;
+        }
+        .look-card .look-divider {
+            width: 40px;
+            height: 2px;
+            background: #b8945f;
+            margin-bottom: 20px;
+        }
+        .look-card p {
+            color: #6b6259;
+            font-size: 0.95em;
+            margin-bottom: 30px;
+            line-height: 1.7;
+        }
+        .look-card a {
+            color: #1a1a1a;
+            text-decoration: none;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-size: 0.8em;
+            border-bottom: 1px solid #b8945f;
+            padding-bottom: 3px;
+            transition: all 0.3s;
+        }
+        .look-card a:hover {
+            color: #b8945f;
+            padding-bottom: 6px;
+        }
+
+        /* ===== NEWSLETTER ===== */
+        .newsletter {
+            padding: 100px 60px;
+            text-align: center;
+            background: #fdfcfa;
+            border-top: 1px solid #ede4d6;
+            border-bottom: 1px solid #ede4d6;
+        }
+        .newsletter h2 {
+            font-size: 1.8em;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            font-weight: normal;
+        }
+        .newsletter p {
+            color: #6b6259;
+            font-style: italic;
+            margin-bottom: 40px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .newsletter form {
+            display: flex;
+            max-width: 500px;
+            margin: 0 auto;
+            gap: 10px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .newsletter input {
+            flex: 1;
+            min-width: 250px;
+            padding: 16px 20px;
+            border: 1px solid #d4c9b8;
+            background: #ffffff;
+            font-family: Georgia, serif;
+            font-size: 0.95em;
+            color: #2a2a2a;
+        }
+        .newsletter input:focus {
+            outline: none;
+            border-color: #b8945f;
+        }
+        .newsletter button {
+            padding: 16px 40px;
+            background: #1a1a1a;
+            color: #fdfcfa;
+            border: none;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-size: 0.85em;
+            cursor: pointer;
+            font-family: Georgia, serif;
+            transition: all 0.3s;
+        }
+        .newsletter button:hover {
+            background: #b8945f;
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background: #1a1a1a;
+            color: #d4c9b8;
+            padding: 80px 60px 40px;
+        }
+        .footer-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 50px;
+            text-align: center;
+        }
+        footer h3 {
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            margin-bottom: 25px;
+            font-weight: normal;
+            color: #fdfcfa;
+            font-size: 1em;
+        }
+        footer p, footer a {
+            color: #a89b88;
+            font-size: 0.9em;
+            text-decoration: none;
+            line-height: 2;
+        }
+        footer a:hover { color: #b8945f; }
+        footer .social-links a {
+            display: inline-block;
+            margin: 0 12px;
+            letter-spacing: 1px;
+        }
+        footer .legal {
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 1px solid #333;
+            font-size: 0.8em;
+            color: #777;
+            line-height: 1.8;
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 768px) {
+            header { padding: 20px 25px; flex-direction: column; gap: 15px; }
+            nav a { margin: 0 12px; font-size: 0.75em; }
+            .hero { padding: 90px 20px 70px; }
+            .hero h1 { font-size: 2em; letter-spacing: 3px; }
+            .rayons, .lookbook { padding: 80px 25px; }
+            .citation { padding: 70px 25px; }
+            .citation p { font-size: 1.15em; }
+            .newsletter { padding: 70px 25px; }
+            footer { padding: 60px 25px 30px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">Luxe <span>Boutique</span> des Bourgeois</div>
+        <nav>
+            <a href="#femme">Femme</a>
+            <a href="#homme">Homme</a>
+            <a href="#enfant">Enfant</a>
+            <a href="#lookbook">Lookbook</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <h1>L'Élégance en Famille</h1>
+        <div class="divider"></div>
+        <p>Une sélection curatoriale de pièces d'exception pour un style bourgeois authentique. Mode Femme, Homme et Enfant, choisie avec soin pour toute la famille.</p>
+        <a href="#rayons" class="btn">Découvrir la Sélection</a>
+    </section>
+
+    <!-- RAYONS : FEMME, HOMME, ENFANT -->
+    <section class="rayons" id="rayons">
+        <div class="section-header">
+            <div class="ornament">✦ ✦ ✦</div>
+            <h2>Nos Univers</h2>
+            <p class="subtitle">Trois rayons pour habiller toute la famille avec élégance</p>
+        </div>
+
+        <div class="grid">
+            <a href="femme.html" class="rayon-card">
+                <span class="icon">👗</span>
+                <h3>Femme</h3>
+                <div class="card-divider"></div>
+                <p>Robes, tailleurs, sacs et accessoires d'exception pour une allure intemporelle.</p>
+            </a>
+            <a href="homme.html" class="rayon-card">
+                <span class="icon">👔</span>
+                <h3>Homme</h3>
+                <div class="card-divider"></div>
+                <p>Costumes, chemises, montres et pièces signature pour un style affirmé.</p>
+            </a>
+            <a href="enfant.html" class="rayon-card">
+                <span class="icon">🧸</span>
+                <h3>Enfant</h3>
+                <div class="card-divider"></div>
+                <p>Mode junior et bébé, chic et confortable, pour les petits bourgeois en herbe.</p>
+            </a>
+        </div>
+    </section>
+
+    <!-- CITATION -->
+    <section class="citation">
+        <p>Le luxe véritable ne réside pas dans l'ostentation, mais dans la justesse et la discrétion de chaque détail.</p>
+        <div class="author">— L'art de vivre bourgeois</div>
+    </section>
+
+    <!-- LOOKBOOK -->
+    <section class="lookbook" id="lookbook">
+        <div class="lookbook-inner">
+            <div class="section-header">
+                <div class="ornament">✦ ✦ ✦</div>
+                <h2>Le Lookbook</h2>
+                <p class="subtitle">Inspirations et tenues complètes pour chaque occasion</p>
+            </div>
+
+            <div class="lookbook-grid">
+                <div class="look-card">
+                    <span class="number">01</span>
+                    <h3>Look Bureau</h3>
+                    <div class="look-divider"></div>
+                    <p>Chemise blanche, pantalon fluide et mocassins en cuir. L'élégance discrète au quotidien.</p>
+                    <a href="#">Voir le look →</a>
+                </div>
+                <div class="look-card">
+                    <span class="number">02</span>
+                    <h3>Look Dimanche</h3>
+                    <div class="look-divider"></div>
+                    <p>Blazer oversize, jean brut et baskets en cuir. Le chic décontracté du week-end.</p>
+                    <a href="#">Voir le look →</a>
+                </div>
+                <div class="look-card">
+                    <span class="number">03</span>
+                    <h3>Look Famille</h3>
+                    <div class="look-divider"></div>
+                    <p>Tenues coordonnées pour toute la famille. L'élégance partagée lors des grandes occasions.</p>
+                    <a href="#">Voir le look →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter">
+        <h2>Recevez notre guide exclusif</h2>
+        <p>"Les 10 basiques à moins de 50€" + 3 looks chaque semaine + bons plans</p>
+        <form>
+            <input type="email" placeholder="Votre adresse email" required>
+            <button type="submit">Je m'inscris →</button>
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-inner">
+            <div>
+                <h3>Luxe Boutique</h3>
+                <p>L'art de vivre l'élégance, accessible.<br>Mode chic et intemporelle pour toute la famille.</p>
+            </div>
+            <div>
+                <h3>Liens utiles</h3>
+                <p>
+                    <a href="#">Mentions légales</a><br>
+                    <a href="#">Politique de confidentialité</a><br>
+                    <a href="#">CGU</a><br>
+                    <a href="#contact">Contact</a>
+                </p>
+            </div>
+            <div>
+                <h3>Suivez-nous</h3>
+                <p class="social-links">
+                    <a href="#">Instagram</a><br>
+                    <a href="#">Pinterest</a><br>
+                    <a href="#">TikTok</a>
+                </p>
+            </div>
+        </div>
+        <div class="legal">
+            © 2026 Luxe Boutique des Bourgeois — Tous droits réservés.<br>
+            En tant que Partenaire, nous percevons une commission sur les achats éligibles.
+        </div>
+    </footer>
+
+</body>
+</html>
